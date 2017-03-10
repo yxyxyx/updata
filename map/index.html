@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>高德地图调用</title>
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script src="http://webapi.amap.com/maps?v=1.3&key=608d75903d29ad471362f8c58c550daf"></script>
+    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <script type="text/javascript">
+		var winW = document.documentElement.clientWidth;
+		var desW = 750;
+		var fontSize = 100;
+		var rem = desW / fontSize;
+		if (winW > desW) {
+			winW = desW
+		}
+		 document.documentElement.style.fontSize = winW / rem + "px";
+	</script>
+	<style type="text/css">
+      body,html,#container{
+        height: 100%;
+        margin: 0px;
+        font: 12px Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial;
+      }
+      .info-title{
+        color: white;
+        font-size: 14px;
+        background-color: rgba(0,155,255,0.8);
+        line-height: 26px;
+        padding: 0px 0 0 6px;
+        font-weight: lighter;
+        letter-spacing: 1px
+      }
+      .info-content{
+        padding: 4px;
+        color: #666666;
+        line-height: 23px;
+      }
+      .info-content img{
+        float: left;
+        margin: 3px;
+      }
+    </style>
+</head>
+<body>
+	<div id="container"></div>
+	<script type="text/javascript">
+		var map = new AMap.Map('container', {
+			resizeEnable:true,
+			zoom:11,
+			center: [116.397428, 39.90923]
+		});
+	</script>
+</body>
+</html>
