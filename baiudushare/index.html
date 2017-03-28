@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>baidushare</title>
+	<style>
+		.share_link {
+	margin-top: 36px;
+}
+.share_link>span {
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	margin-right: 20px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.share_link>span.k {
+	background-image: url(./images/qzone.png);
+}
+.share_link>span.q {
+	background-image: url(./images/qq.png);
+}
+.share_link>span.w {
+	background-image: url(./images/wx.png);
+}
+.share_link>span.x {
+	background-image: url(./images/xlwb.png);
+}
+.share_link>span.o {
+	background-image: url(./images/onekey.png);
+}
+.share_link>span>a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+	</style>
+</head>
+<body>
+    <div class="share_link bdsharebuttonbox" data-tag="share_2">
+          <span class="k"><a href="javascript:;" class="bds_qzone" data-cmd="qzone" style="background-image: none;"></a></span>
+          <span class="q"><a href="javascript:;" class="bds_sqq" data-cmd="sqq" style="background-image: none;"></a></span>
+          <span class="w"><a href="javascript:;" class="bds_weixin" data-cmd="weixin" style="background-image: none;"></a></span>
+          <span class="x"><a href="javascript:;" class="bds_tsina" data-cmd="tsina" style="background-image: none;"></a></span>
+          <span class="o" style="margin-right:0"><a href="javascript:;" class="bds_mshare" data-cmd="mshare" style="background-image: none"></a></span>
+        </div>
+    <script type="text/javascript">
+    	window._bd_share_config = {
+		common : {
+			//此处放置通用设置
+		  "bdSnsKey": {},
+          "bdText": "音乐相册--入点文化",  // 分享标题
+          "bdDesc": "this is very intrsting software",
+          "bdMini": "2",    // 分享描述
+          "bdMiniList": false,
+          "bdPic": "http://www.easyinto.cn/image/170328171758_7606.jpg",   // 分享封面
+          "bdStyle": "0",
+          "bdSize": "16",
+          "bdUrl": 'http://www.easyinto.com/love/rudian/album/lifetimes.html?id=109'  // 要分享的Url
+		},
+		share : {
+		}
+		
+	}
+
+    </script>
+    <script>
+	    with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+</body>
+</html>
