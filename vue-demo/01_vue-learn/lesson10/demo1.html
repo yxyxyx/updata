@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .bdr{
+            border:3px solid blue;
+            padding:10px;
+        }
+    </style>
+    <script src="../lib/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <div class="bdr"  @click="outter">
+        outter
+        <div class="bdr" @click.stop="middle" > middle
+            <div class="bdr" @click="inner" >
+                inner
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    new Vue({
+        el:'#app',
+        methods:{
+            inner:function(){
+                alert('inner')
+            },
+            middle:function(){
+                alert('middle')
+            },
+            outter:function(){
+                alert('outter')
+            }
+        }
+    })
+</script>
+</body>
+</html>

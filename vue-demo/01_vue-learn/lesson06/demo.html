@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!--<img v-bind:src="src" alt="" height="300" width="500">-->
+        <img :src="src" alt="" height="300" width="500">
+    </div>
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+                src:'http://img4.imgtn.bdimg.com/it/u=3217962789,3430649993&fm=23&gp=0.jpg'
+            }
+        })
+    </script>
+</body>
+</html>
