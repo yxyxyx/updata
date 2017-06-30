@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue-todos</title>
+	<link rel="stylesheet" href="./css/index.css">
+    <script type="text/javascript" src="./js/vue.js"></script>
+</head>
+<body>
+    <div class="box">
+        <div class="title">
+        	<div class="titlecenter">
+        		2017年任务计划表
+        	</div>
+        </div>
+        <div class="content">
+            <div class="boxcenter">
+            	<h3>添加任务:</h3>
+            	<input 
+                type="text" 
+                v-model="todo" 
+                v-on:keyup.enter="addtodo"
+                placeholder="填写计划，按enter键保存">
+            	<ul class="project" v-show="list.length">
+            		<li>{{noCheckeLength}}个未完成任务</li>
+            		<li>
+            			<a href="#all">全部任务</a>
+            			<a href="#unfinished">未完成任务</a>
+            			<a href="#finished">已完成任务</a>
+            		</li>
+            	</ul>
+            	<h3>任务列表：</h3>
+            	<div class="projectlist">
+            	    <span class="plan" v-show="!list.length">您目前还没有计划表</span>
+                    <ul class="todo-list">
+                    	<li class="todo" :class="{complated:item.isChecked,editing:item === entorTodos}" v-for="item in filteredList">
+                    		<div class="view">
+                    			<input type="checkbox" v-model="item.isChecked">
+                    			<label class="huax" 
+                                @dblclick="editTodo(item)">{{item.title}}</label>
+                    			<button class="dele" 
+                                @click="delet(item)">x</button>
+                    		</div>
+                    		<input 
+                            v-focus="entorTodos === item" type="text" 
+                            class="edit" 
+                            v-model="item.title"
+                            @blur="edtorTodoed(item)"
+                            @keyup.enter="edtorTodoed(item)"
+                            @keyup.esc="cancelTodo(item)">
+                    	</li>
+                    </ul>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
