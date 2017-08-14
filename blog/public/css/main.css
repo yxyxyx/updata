@@ -1,0 +1,133 @@
+html, body, p, h1, h2, h3, h4, h5, h6, div, ul, dl, dd, dt, li, i, b, input, textarea {
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    font-style: normal;
+}
+img {
+    margin: 0;
+    padding: 0;
+}
+ul,li {
+    list-style: none;
+}
+button{
+    border:none;
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Microsoft yahei';
+    line-height: 1.5;
+    font-size: 16px
+}
+.rightBox{
+    width:300px;
+    background-color: #ffffff;
+    padding:10px;
+    box-shadow: 2px 2px 2px 3px #999;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.title{
+    padding:4px 0;
+}
+.title span{
+    padding:4px 0;
+    border-bottom: 2px solid #996D30;
+}
+.line{
+    padding:4px 0;
+}
+.line .colDark{
+    width:30%;
+    display: inline-block;
+}
+.line input{
+    display: inline-block;
+    width:60%;
+    height:30px;
+    padding:0 2px;
+    box-sizing: border-box;
+}
+.line button{
+    width:60%;
+    background-color: #ffaf21;
+    color:#ffffff;
+    height: 30px;
+    border-radius: 4px;
+}
+.textRight{
+    display: inline-block;
+}
+.admin{
+    color:#0df900;
+}
+.main{
+    background-color: #E9E9E9;
+    width:100%;
+    padding:20px 0;
+}
+.maincenter{
+    width:1000px;
+    margin:auto;
+    overflow: auto;
+}
+.mainLeft{
+    float: left;
+    width:60%
+}
+.listBox{
+    width:100%;
+    padding:30px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.mainRight{
+    float: right;
+    width:30%
+}
+.function a{
+    background-color: #f98b1d;
+    padding:4px;
+    border-radius: 2px;
+}
+.focus{
+    border-bottom:2px solid #ffc700;
+}
+.clear{
+    border:1px solid #2aabd2;
+}
+.clear{
+    width:100%;
+    height:42px;
+}
+#messageContent{
+    float: left;
+    width:90%;
+    resize:none;
+    border:none;
+}
+#messageBtn{
+    float: right;
+    border:none;
+    background-color: #2aabd2;
+    width:10%;
+    height: 100%;
+    color: #ffffff;
+}
+.name{
+    overflow: auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.em{
+    float: right;
+}
